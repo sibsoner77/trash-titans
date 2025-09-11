@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Your Pickup | Trash Titans NYC</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🦝 Book Your Junk Removal</h1>
+    <p>Call Now: <strong>1-347-321-4392</strong></p>
+  </header>
+
+  <main>
+    <section id="calendar">
+      <h2>Select a Date & Time</h2>
+      <iframe src="calendar/calendar.html" width="100%" height="600" frameborder="0"></iframe>
+    </section>
+
+    <section id="details-form">
+      <h2>Job Details</h2>
+      <form>
+        <label for="location">Pickup Address:</label>
+        <input type="text" id="location" name="location" required />
+
+        <label for="items">What are we hauling?</label>
+        <textarea id="items" name="items" rows="4" required></textarea>
+
+        <label for="contact">Your Phone Number:</label>
+        <input type="tel" id="contact" name="contact" required />
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </section>
+
+    <section id="payment">
+      <h2>Secure Payment</h2>
+      <p>Stripe integration coming soon.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Serving all boroughs. Fast. Affordable. Trusted.</p>
+  </footer>
+
+  <script src="scripts/booking.js"></script>
+</body>
+</html>
